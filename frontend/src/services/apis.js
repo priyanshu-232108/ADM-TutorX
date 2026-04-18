@@ -1,19 +1,19 @@
-const BASE_URL = import.meta.env.VITE_APP_BASE_URL || "http://localhost:4000/api/v1";
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
 // AUTH ENDPOINTS
 export const endpoints = {
-  SENDOTP_API: BASE_URL + "/auth/sendotp",
-  SIGNUP_API: BASE_URL + "/auth/signup",
-  LOGIN_API: BASE_URL + "/auth/login",
-  RESETPASSTOKEN_API: BASE_URL + "/auth/reset-password-token",
-  RESETPASSWORD_API: BASE_URL + "/auth/reset-password",
+  SENDOTP_API: BASE_URL + "/api/v1/auth/sendotp",
+  SIGNUP_API: BASE_URL + "/api/v1/auth/signup",
+  LOGIN_API: BASE_URL + "/api/v1/auth/login",
+  RESETPASSTOKEN_API: BASE_URL + "/api/v1/auth/reset-password-token",
+  RESETPASSWORD_API: BASE_URL + "/api/v1/auth/reset-password",
 }
 
 // PROFILE ENDPOINTS
 export const profileEndpoints = {
-  GET_USER_DETAILS_API: BASE_URL + "/profile/getUserDetails",
-  GET_USER_ENROLLED_COURSES_API: BASE_URL + "/profile/getEnrolledCourses",
-  GET_INSTRUCTOR_DATA_API: BASE_URL + "/profile/instructorDashboard",
+  GET_USER_DETAILS_API: BASE_URL + "/api/v1/profile/getUserDetails",
+  GET_USER_ENROLLED_COURSES_API: BASE_URL + "/api/v1/profile/getEnrolledCourses",
+  GET_INSTRUCTOR_DATA_API: BASE_URL + "/api/v1/profile/instructorDashboard",
 }
 
 // ADMIN ENDPOINTS
